@@ -23,7 +23,7 @@ public class WordleDictionaryLoader {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(nameOfDictionary),
                 StandardCharsets.UTF_8))) {
             String line = reader.readLine();
-            while (line!= null) {
+            while (line != null) {
                 if (line.length() == 5) {
                     line = line.toLowerCase().replace("ё", "е");
                     wordleDictionary.getWords().add(line);
