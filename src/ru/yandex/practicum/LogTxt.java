@@ -12,7 +12,7 @@ public class LogTxt {
             e.printStackTrace(writer);
             writer.println();
         } catch (IOException ex) {
-
+            ex.printStackTrace();
         }
     }
 }
